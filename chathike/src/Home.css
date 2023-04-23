@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+#home-container{
+    height: 100vh;
+    background-color: #724cf9;
+    overflow: hidden;
+}
+
+#description{
+    width:50vw;
+}
+
+#chat-hike{
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+#chat-hike-description{
+    font-family: 'Orbitron', sans-serif;
+}
+

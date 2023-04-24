@@ -7,6 +7,7 @@ import Home from './Home.jsx';
 import './Components/ButtonArrow.css';
 import ButtonArrow from './Components/ButtonArrow.jsx';
 import google from './Images/google.gif';
+import { CometChat } from "@cometchat-pro/chat";
 
 
 const cookie = new Cookies();
@@ -15,6 +16,36 @@ function App() {
   const [isAuth, setAuth] = useState(cookie.get("auth-token"));
   const [room, setRoom] = useState(null);
   const roomReference = useRef(null);
+
+
+/*
+  const appID = "APP_ID";
+const region = "REGION";
+const appSetting = new CometChat.AppSettingsBuilder().subscribePresenceForAllUsers().setRegion(region).build();
+CometChat.init(appID, appSetting).then(
+  () => {
+    console.log("Initialization completed successfully");
+    // You can now call login function.
+  },
+  error => {
+    console.log("Initialization failed with error:", error);
+    // Check the reason for error and take appropriate action.
+  }
+);
+let authKey = "AUTH_KEY";
+var uid = "user1";
+var name = "Kevin";
+
+var user = new CometChat.User(uid);
+user.setName(name);
+CometChat.createUser(user, authKey).then(
+    user => {
+        console.log("user created", user);
+    },error => {
+        console.log("error", error);
+    }
+)*/
+
   console.log({isAuth});
   if (!isAuth) {
     return (

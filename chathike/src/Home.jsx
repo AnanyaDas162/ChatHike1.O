@@ -19,7 +19,7 @@ const Home=()=>{
                     <div className='grid grid-cols-4 pt-12'><span className='col-start-2'><ButtonArrow text="Get Started"></ButtonArrow></span></div>
                 </div>
                 <section className=' h-screen grid justify-items-center items-center' id="img-container">
-                <div>
+                <div id="image">
                     <img src={phone}></img>
                 </div>
                 </section>

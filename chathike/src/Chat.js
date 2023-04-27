@@ -79,6 +79,7 @@ but it returns a promise that resolves to the first document
             setIsChecked(!isChecked);
       }
 
+
      return(
          <>
             <div className={`w-full h-full ${!isChecked ? 'light_theme' : 'dark_theme'} grid grid-cols-6`} id="chat-container">
@@ -122,7 +123,8 @@ but it returns a promise that resolves to the first document
                           
                            <section className={`w-full flex ${auth.currentUser.displayName === msg.name ? 'flex-row-reverse' : 'flex-row'}`}> 
                             <div className='grid p-2 rounded-lg justify-items-center w-64 ' id="para">
-                               <h1 className='text-white' id="sender">{msg.name}</h1>
+                               <button className='text-white' id="sender">{msg.name}
+                               </button>
                                <p key={msg.id} className='grid p-2 rounded-lg'>
                                      {msg.text}
                                      {console.log(messages)}

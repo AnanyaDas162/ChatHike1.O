@@ -38,7 +38,7 @@ Without more context or information about the specific auth and provider variabl
                    <div className='grid justify-items-center items-center overflow-hidden'>
                    <img src={google} id="google-img"></img>
                    </div>
-                   <h1 className='col-span-6'>Sign Up or Log in</h1>
+                   <h1 className='col-span-6' id="log-in">Sign Up or Log in</h1>
                    <ButtonArrow></ButtonArrow>
                </button>
             </section>

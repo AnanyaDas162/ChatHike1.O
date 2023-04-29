@@ -25,7 +25,23 @@
 }
 
 @media screen and (max-width:700px){
-    #image{
-
+    #home-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #chat-hike-description{
+        display: none !important;
+    }
+    #chat-hike{
+        font-size: 4rem;
+    }
+    #description{
+        width: auto;
+        padding: 0;
+    }
+    #hike-holder{
+        padding: 29px;
     }
 }

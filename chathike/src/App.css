@@ -50,3 +50,33 @@
       transform: translateY(-0.1em);
     }
   }
+
+  #hike-header{
+    font-family: 'Bruno Ace SC', cursive;
+  }
+
+  .list-item{
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  #footer{
+    background-color: #1B1B1E;
+  }
+
+  @media screen and (max-width:700px){
+    #swiper-holder{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    #list-holder{
+      margin: 10%;
+    }
+    #sign-up-container{
+      border: 0;
+    }
+    .icon-img{
+      height: 2rem;
+    }
+  }

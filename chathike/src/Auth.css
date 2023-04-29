@@ -38,3 +38,20 @@ border: 1px solid white;
 #google-img{
     height:45px;
 }
+
+@media screen and (max-width: 700px){
+    #sign-up-container{
+        height:100%;
+        border-radius:0;
+        background-color: transparent;
+    }
+    #sign-up-btn{
+        width:65%;
+    }
+    #log-in{
+        font-size: 17px;
+    }
+    #copy{
+      width: 322px;
+    }
+}

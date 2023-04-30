@@ -55,8 +55,8 @@ CometChat.createUser(user, authKey).then(
   if (!isAuth) {
     return (
       <>
-          <Home><section></section></Home>
-          <Auth header="Hello Guys!" para="Please sign up or log in through your Google mail id to enter a chat room and have a blissful conversation with your friends." display="grid"></Auth>
+          <Home id1="#auth" id2="#swiper-holder" id3="#footer" id4="#auth-container"><section></section></Home>
+          <div id="auth"><Auth header="Hello Guys!" id="#auth-container" para="Please sign up or log in through your Google mail id to enter a chat room and have a blissful conversation with your friends." display="grid"></Auth></div>
           <section className='h-screen grid grid-cols-2 justify-items-center items-center' id="swiper-holder">
                <div className='grid justify-items-start items-center h-screen' id="swiper-1">
                      <Swiper1></Swiper1>
@@ -69,8 +69,12 @@ CometChat.createUser(user, authKey).then(
                    <li className='text-white list-item'>If room does not exist, then create</li>
                    <li className='text-white list-item'>After entering the room, chat with your friends!</li>
                </div>
-          </section>  
-          <footer className='h-60 grid grid-cols-4 grid-rows-2 justify-items-center items-center' id="footer">
+          </section> 
+          
+                  
+
+        <div id="footer">
+          <footer className='h-60 grid grid-cols-4 grid-rows-2 justify-items-center items-center'>
               <a href="https://github.com/AnanyaDas162">
                 <img src={github} className='h-24 icon-img'></img>
               </a>
@@ -86,7 +90,8 @@ CometChat.createUser(user, authKey).then(
               <div className='row-start-2 grid grid-cols-4 justify-items-center w-screen'>
                 <h1 className='text-white font-extrabold text-xl col-start-4' id="copy">@CopyRight Ananya Das 2023</h1>
               </div>
-          </footer>   
+          </footer>  
+        </div>   
       </>
     );
   }

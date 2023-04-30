@@ -1,14 +1,14 @@
 import {react, reactDom} from 'react';
 import './Button.css';
 
-const Button=({text})=>{
+const Button=(props)=>{
      return(
         <>
             <button class="learn-more">
-                <span class="circle" aria-hidden="true">
+                <a class="circle" aria-hidden="true" href={props.id}>
                       <span class="icon arrow"></span>
-                </span>
-                <span class="button-text">{text}</span>
+                </a>
+                <span class="button-text">{props.text}</span>
             </button>
         </>
      );

@@ -64,6 +64,35 @@
     width: 100%;
 }
 
-#details{
-    
+@media screen and (max-width: 700px){
+    #profile{
+        display: none;
+    }
+    #list-container{
+        display: none;
+    }
+    #chat-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #msg-container{
+        width: 100%;
+    }
+    #para{
+        width: 8rem;
+    }
+    #profileImage-container{
+        display: none;
+    }
+    #profile-container{
+        display: flex;
+    }
+   /* .pro2:hover ~ .list2{
+        display: grid;
+        width: 100%;
+    }
+    #profile-container ~ #msg-container{
+        display: none;
+    }*/
 }

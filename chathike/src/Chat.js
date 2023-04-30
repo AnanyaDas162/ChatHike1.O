@@ -7,6 +7,8 @@ import { auth } from './FireBase.js';
 import './Chat.css';
 import './App.css';
 import './Components/Toggle-btn.css';
+import profile from './Images/profile.png';
+import profileImage from './Images/kiss.png';
 
 const Chat = (props) => {
     const {room} = props;
@@ -83,8 +85,8 @@ but it returns a promise that resolves to the first document
      return(
          <>
             <div className={`w-full h-full ${!isChecked ? 'light_theme' : 'dark_theme'} grid grid-cols-6`} id="chat-container">
-                  <div className={`${!isChecked ? 'light_theme' : 'dark_theme'}  h-full w-full col-start-1 col-span-2`} id="list-container">
-                      <div className=' h-full flex flex-col '>
+                  <div className={`${!isChecked ? 'light_theme' : 'dark_theme'}  h-full w-full col-start-1 col-span-2 list2`} id="list-container">
+                      <div className=' h-full flex flex-col ' id="profile">
                             <section className='h-20 grid w-full justify-items-center items-center w-full'id="display-name">
                                 <h1 className='text-white font-semibold text-2xl'>{auth.currentUser.displayName}</h1>
                             </section>
@@ -109,6 +111,12 @@ but it returns a promise that resolves to the first document
                   </div>
                   <div className={`${!isChecked ? 'light_theme' : 'dark_theme'}  grid justify-items-center items-start h-full col-start-3 col-span-4`} id="msg-container">
                         <section className='h-20 w-full grid  justify-items-center items-center'id="display-name">
+                             <div id="profile-container" className='hidden pro2'>
+                                  <img src={profile} className='h-12'></img>
+                             </div>
+                             <div id="profileImage-container">
+                                  <img src={profileImage} className='h-12'></img>
+                             </div>
                              <h1 className='text-white col-start-3 text-center w-fit font-semibold text-4xl'>{room}</h1>
                              <label className="switch col-start-6">
                                      <input type="checkbox" checked={isChecked} onChange={handleCheckBoxChange} className="input__check"/>

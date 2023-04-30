@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "chathike",
+    "host": "chathike"
+  },
+  "targets": {},
+  "etags": {}
+}

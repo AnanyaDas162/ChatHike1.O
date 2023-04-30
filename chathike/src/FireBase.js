@@ -9,13 +9,27 @@ import { getFirestore} from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBJehbnwTNikoiiRcnGJKRSmpmm2vcg4tk",
+  /*apiKey: "AIzaSyBJehbnwTNikoiiRcnGJKRSmpmm2vcg4tk",
   authDomain: "chathike-7722b.firebaseapp.com",
   projectId: "chathike-7722b",
   storageBucket: "chathike-7722b.appspot.com",
   messagingSenderId: "982175666836",
   appId: "1:982175666836:web:22ea410b5fafaef5f39a81",
-  measurementId: "G-HKSG4LF2G1"
+  measurementId: "G-HKSG4LF2G1"*/
+  /*apiKey: "AIzaSyA4MgulH622dK5uIWTKCokv40KlnVZcj5g",
+  authDomain: "firechat-a25b9.firebaseapp.com",
+  projectId: "firechat-a25b9",
+  storageBucket: "firechat-a25b9.appspot.com",
+  messagingSenderId: "475144490749",
+  appId: "1:475144490749:web:6546a73157624a86707894",
+  dbLink:"https://firechat-a25b9-default-rtdb.firebaseio.com"*/
+  apiKey: "AIzaSyB0N5szMmsr1QYXZu3sbdUKfyEN7AIE2_M",
+  authDomain: "chathike.firebaseapp.com",
+  databaseURL: "https://chathike-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "chathike",
+  storageBucket: "chathike.appspot.com",
+  messagingSenderId: "126648467902",
+  appId: "1:126648467902:web:6b772cb97d67155de739ef"
 };
 
 // Initialize Firebase

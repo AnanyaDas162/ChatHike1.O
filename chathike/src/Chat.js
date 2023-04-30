@@ -22,7 +22,8 @@ const Chat = (props) => {
     
     useEffect(
         ()=>{
-            const queryMessage = query(messageReference, where("room","==",room));
+            const queryMessage = query(messageReference, where("room","==",room),
+           );
              onSnapshot(queryMessage, (snapshot) => {
                 //console.log("new");
                 var messages = [];
